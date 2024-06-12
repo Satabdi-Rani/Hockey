@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,18 @@
     <script src="https://kit.fontawesome.com/ee91259f9b.js" crossorigin="anonymous"></script>
     <title>Hockey</title>
 </head>
+
 <body>
     <!-- header  -->
-     <section class="mt-10 mb-8">
-        <div class="container mx-auto flex flex-row justify-between ">
+    <section class="mt-10 mb-8">
+        <div class="container mx-auto flex flex-row justify-around sm:justify-between ">
+            <div class="sm:hidden">
+                <i class="fa-solid fa-bars text-2xl ml-8 mt-2"></i>
+            </div>
             <div>
                 <h1 class="text-4xl font-bold">Hockey's</h1>
             </div>
-            <ul class="flex flex-row gap-8 mt-3">
+            <ul class="hidden sm:flex sm:flex-row sm:gap-8 sm:mt-3">
                 <li class="text-lg hover:text-[#FF4240]"><a href="#">Home</a></li>
                 <li class="text-lg hover:text-[#FF4240]"><a href="#">About</a></li>
                 <li class="text-lg hover:text-[#FF4240]"><a href="#">Pages</a></li>
@@ -29,39 +34,80 @@
                 <button class="bg-[#FF4240] px-6 py-3 text-white text-lg border rounded-lg">Get Ticket</button>
             </div>
         </div>
-     </section>
-    
-    <!-- professional Hockeys club -->
-     <section class="">
-        <div class="container mx-auto">
-        <div class="border-dashed text-center ">
-            <h1 class="text-3xl font-bold">Professional Hockeys Club</h1>
-            <h6>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </h6>
-        </div>
-        <div class="grid grid-col-1 sm:grid-cols-4 mx-auto">
-             <div>
-                <div class="radial-progress text-primary" style="--value:70;" role="progressbar">70%</div>
-                <h3>Prayer Facility</h3>
-                <h4>Ice hockey, game between two teams.</h4>
-             </div>
-             <div>
-                <div class="radial-progress text-primary" style="--value:70;" role="progressbar">70%</div>
-                <h3>Prayer Facility</h3>
-                <h4>Ice hockey, game between two teams.</h4>
-             </div>
-             <div>
-                <div class="radial-progress text-primary" style="--value:70;" role="progressbar">70%</div>
-                <h3>Prayer Facility</h3>
-                <h4>Ice hockey, game between two teams.</h4>
-             </div>
-             <div>
-                <div class="radial-progress text-primary" style="--value:70;" role="progressbar">70%</div>
-                <h3>Prayer Facility</h3>
-                <h4>Ice hockey, game between two teams.</h4>
-             </div>
-        </div>
-    </div>
-     </section>
-</body>
-</html>
+    </section>
 
+    <!-- banner -->
+    <section class="mt-16">
+        <div class="container mx-auto border rounded-lg flex flex-col sm:">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-80 sm:w-full rounded-lg ">
+                  <img src="Images/banner1.jpg" class="w-full bg-cover bg-no-repeat	 h-[600px] rounded-lg" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-10 right-5 bottom-4">
+                    <a href="#slide4" class="btn btn-circle bg-black text-white text-lg ">❮</a> 
+                    <a href="#slide2" class="btn btn-circle bg-black text-white text-lg right-10 ">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-80 sm:w-full rounded-lg">
+                  <img src="Images/banner2.jpg" class="w-full bg-cover bg-no-repeat	 h-[600px] rounded-lg" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-10 right-5 bottom-4">
+                    <a href="#slide1" class="btn btn-circle bg-black text-white text-lg">❮</a> 
+                    <a href="#slide3" class="btn btn-circle bg-black text-white text-lg">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-80 sm:w-full rounded-lg">
+                  <img src="Images/banner3.jpg" class="w-full bg-cover bg-no-repeat	 h-[600px] rounded-lg" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-10 right-5 bottom-4">
+                    <a href="#slide2" class="btn btn-circle bg-black text-white text-lg">❮</a> 
+                    <a href="#slide4" class="btn btn-circle bg-black text-white text-lg">❯</a>
+                  </div>
+                </div> 
+                <!-- <div id="slide4" class="carousel-item relative w-full">
+                  <img src="Images/banner1.jpg" class="w-full bg-cover h-[600px] rounded-lg" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-10 right-5 bottom-4">
+                    <a href="#slide3" class="btn btn-circle bg-black text-white text-lg">❮</a> 
+                    <a href="#slide1" class="btn btn-circle bg-black text-white text-lg">❯</a>
+                  </div>
+                </div> -->
+              </div>
+        </div>
+        <div class=" mt-6 sm:mt-0 mx-4 sm:absolute bg-black text-white sm:w-[30%] border-black p-6 bottom-80 right-56 rounded-xl">
+            <h3 class="font-bold text-xl">Meet all the heros from the field</h3>
+            <h4 class="text-md font-light mt-2">Research then turned up mention of a hockeylike game, played in the early 1800s in Nova Scotia by the Mi’kmaq (Micmac) Indians, which appeared to have been heavily influenced by the Irish game of hurling</h4>
+        </div>
+    </section>
+
+    <!-- professional Hockeys club -->
+    <section class="">
+        <div class="container mx-auto">
+            <div class="border-dashed text-center ">
+                <h1 class="text-3xl font-bold">Professional Hockeys Club</h1>
+                <h6>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
+                    sit nullam proin. </h6>
+            </div>
+            <div class="grid grid-col-1 sm:grid-cols-4 mx-auto">
+                <div>
+                    <div class="radial-progress text-primary" style="--value:70;" role="progressbar">70%</div>
+                    <h3>Prayer Facility</h3>
+                    <h4>Ice hockey, game between two teams.</h4>
+                </div>
+                <div>
+                    <div class="radial-progress text-primary" style="--value:70;" role="progressbar">70%</div>
+                    <h3>Prayer Facility</h3>
+                    <h4>Ice hockey, game between two teams.</h4>
+                </div>
+                <div>
+                    <div class="radial-progress text-primary" style="--value:70;" role="progressbar">70%</div>
+                    <h3>Prayer Facility</h3>
+                    <h4>Ice hockey, game between two teams.</h4>
+                </div>
+                <div>
+                    <div class="radial-progress text-primary" style="--value:70;" role="progressbar">70%</div>
+                    <h3>Prayer Facility</h3>
+                    <h4>Ice hockey, game between two teams.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
